@@ -57,8 +57,8 @@ print(f1 != f2) # True
 ```python
 from pyfract.fraction import Fraction
 
-print(Fraction.from_float(0.5))
-print(Fraction.from_float(0.134))
+print(Fraction.from_float(0.5)) # [1/2]
+print(Fraction.from_float(0.134)) # [67/500]
 ```
 
 ### Accurate conversion from float
@@ -67,23 +67,23 @@ Fast conversion from float doesn't work so well for float like `0.33333333333333
 from pyfract.fraction import Fraction
 
 x = 1 / 3
-print(x)
+print(x) # 0.3333333333333333
 f = Fraction.from_float_accurately(x)
-print(f)
+print(f) # [1/3]
 ```
 `accuracy` defines up to how many decimal places the fraction must be accurate. By default it is `8`
 ```python
 from pyfract.fraction import Fraction
 
 f = Fraction.from_float_accurately(0.31987398749812214, accuracy=10)
-print(f)
+print(f) # [44981/140621]
 ```
 ### To float
 ```python
 from pyfract.fraction import Fraction
 
 f = Fraction(1, 2)
-print(f.to_float())
+print(f.to_float()) # 0.5
 ```
 
 ## Contributing
