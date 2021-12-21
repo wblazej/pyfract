@@ -1,15 +1,23 @@
 from setuptools import find_packages, setup
+import os
+from io import open
+
+def read_file(path, encoding='utf-8'):
+    with open(os.path.join(os.path.dirname(__file__), path),
+              encoding=encoding) as fp:
+        return fp.read()
 
 setup(
     name='pyfract',
     packages=find_packages(),
-    version='1.0',
+    version='1.1',
     description='Fractions implementation for Python',
+    long_description=read_file('README.md'),
+    long_description_content_type='text/markdown',
     author='Błażej Wrzosok',
     license='MIT',
     install_requires=[],
     url='https://github.com/wblazej/pyfract',
-    download_url='https://github.com/wblazej/pyfract/archive/refs/tags/1.0.tar.gz',
     keywords=['math', 'fractions', 'fract', 'numerator', 'denominator'],
     classifiers=[
     'Development Status :: 4 - Beta',
