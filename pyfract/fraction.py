@@ -1,5 +1,5 @@
 from math import floor
-from src.utils import greatest_common_divisor
+from pyfract.src.utils import greatest_common_divisor
 
 
 class Fraction:

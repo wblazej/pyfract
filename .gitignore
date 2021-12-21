@@ -2,3 +2,11 @@
 __pycache__/
 *.py[cod]
 *$py.class
+
+# build
+/build
+/dist
+/*.egg-info
+
+# enviroments
+/venv
