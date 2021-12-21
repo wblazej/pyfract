@@ -10,7 +10,7 @@ def read_file(path, encoding='utf-8'):
 setup(
     name='pyfract',
     packages=find_packages(),
-    version='1.1',
+    version='1.2',
     description='Fractions implementation for Python',
     long_description=read_file('README.md'),
     long_description_content_type='text/markdown',
