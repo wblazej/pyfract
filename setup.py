@@ -7,4 +7,6 @@ setup(
     description='Fractions implementation for Python',
     author='Błażej Wrzosok',
     license='MIT',
+    install_requires=[],
+    url='https://github.com/wblazej/pyfract',
 )
