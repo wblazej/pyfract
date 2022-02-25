@@ -83,21 +83,27 @@ class Fraction:
         return Fraction(p, q).simplify()
 
     def __lt__(self, other):
-        return self.to_float() < other.to_float()
+        other = Fraction.__normalize_type(other)
+        return self.to_float() < other
 
     def __le__(self, other):
+        other = Fraction.__normalize_type(other)
         return self.to_float() <= other.to_float()
 
     def __gt__(self, other):
+        other = Fraction.__normalize_type(other)
         return self.to_float() > other.to_float()
 
     def __ge__(self, other):
+        other = Fraction.__normalize_type(other)
         return self.to_float() >= other.to_float()
 
     def __eq__(self, other):
+        other = Fraction.__normalize_type(other)
         return self.to_float() == other.to_float()
 
     def __ne__(self, other):
+        other = Fraction.__normalize_type(other)
         return self.to_float() != other.to_float()
 
     @staticmethod

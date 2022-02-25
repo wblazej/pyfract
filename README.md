@@ -6,6 +6,12 @@ A simple implementation of fraction numbers in Python. In some cases it is bette
 pip install pyfract
 ```
 
+## Running tests
+```
+chmod +x run-tests.sh
+./run-tests.sh
+```
+
 ## Usage
 ### Initialization
 ```python
@@ -51,6 +57,13 @@ print(f1 > f2) # True
 print(f1 >= f2) # True
 print(f1 == f2) # False
 print(f1 != f2) # True
+
+print(f1 < 0.5) # False
+print(f1 <= 0.5) # True
+print(f1 > 0.5) # False
+print(f1 >= 0.5) # True
+print(f1 == 0.5) # True
+print(f1 != 0.5) # False
 ```
 
 ### Conversion from float
